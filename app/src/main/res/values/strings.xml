@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TESTgameQuizLAYOUT</string>
+
+    <!--Toast Message String-->
+    <string name="merci">"Your score is "</string>
+
+    <!--Answer Strings Below-->
+    <string name="monopoly">"Monopoly"</string>
+    <string name="scrabble">"Scrabble"</string>
+    <string name="chess">"Chess"</string>
+    <string name="checkers">"Checkers"</string>
+    <string name="pictionary">"Pictionary"</string>
+    <string name="twister">"Twister"</string>
+    <string name="uno">"UNO"</string>
+    <string name="creationary">"Creationary"</string>
+    <string name="clue">"CLUE"</string>
+    <string name="a1920">"1920"</string>
+    <string name="a1935">"1935"</string>
+    <string name="a1955">"1955"</string>
+    <string name="a1980">"1980"</string>
+    <string name="netzahualcoyotl">Netzahualcoyotl</string>
+    <string name="knickknack">Knickknack</string>
+    <string name="pizzazz">Pizzazz</string>
+    <string name="czechoslovakian">Czechoslovakian</string>
+    <string name="senselessnesses">Senselessnesses</string>
+    <string name="buckinghamshire">Buckinghamshire</string>
+    <string name="a72">72</string>
+    <string name="a54">54</string>
+    <string name="a48">48</string>
+    <string name="a57">57</string>
+    <string name="submit">submit</string>
+    <string name="reset">reset</string>
+    <!--Question Strings below-->
+    <string name="question1">#1. What is the best selling board game of all time?</string>
+    <string name="question2">#2. Select 3 games all produced by Hasbro: </string>
+    <string name="question3">#3. What year was Monopoly first manufactured?</string>
+    <string name="question4">#4. In Scrabble; these 3 words are impossible to play: </string>
+    <string name="question5">#5. How many pieces are in JENGA?</string>
+
+
+
+</resources>
