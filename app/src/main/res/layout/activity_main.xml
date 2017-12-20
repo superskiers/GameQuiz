@@ -360,6 +360,57 @@
                 android:textStyle="bold"/>
 
         </RadioGroup>
+        
+                <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/question6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question6"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/ques6Radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="@string/yahtzee"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/ques6Radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="@string/backgammon"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/ques6Radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="@string/connectfour"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/ques6Radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:text="@string/battleship"
+                android:textStyle="bold"/>
+
+        </RadioGroup>
 
         <TextView
             android:id="@+id/gameSummary"
