@@ -81,6 +81,16 @@ public class MainActivity extends AppCompatActivity {
         }
         return score;
     }
+        // This method returns the score for the 6th question. ConnectFour
+    public int ques6Radio3(int score) {
+        //Casting the radio button for the 6th question
+        RadioButton ques6Radio3 = findViewById(R.id.ques6Radio3);
+        //Adds one point, only if ques5Radio2 is selected
+        if (ques6Radio3.isChecked()) {
+            score += 1;
+        }
+        return score;
+    }
     // This method is called when the submitBTN is clicked.
     public void sendMessage(View view) {
         EditText playersName = findViewById(R.id.enterName);
@@ -112,9 +122,11 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton rbJenga54 = findViewById(R.id.ques5Radio2);
         boolean rbPressedJenga = rbJenga54.isChecked();
+        
+        RadioButton ques6Radio3 = findViewById(R.id.ques6Radio3);
+        boolean rbConnectFour = ques6Radio3.isChecked();
 
-
-        int score = calculateScore(rbPressedJenga, rbMono1935, checkedSense, checkedPizzazz, checkedKnickknack, rbPressedChess, checkedMonopoly, checkedTwister, checkedCLUE);
+        int score = calculateScore(rbPressedJenga, rbMono1935, rbConnectFour, checkedSense, checkedPizzazz, checkedKnickknack, rbPressedChess, checkedMonopoly, checkedTwister, checkedCLUE);
         String playerMessage = gameSummary(score, playerName);
         displayMessage(playerMessage);
 
@@ -131,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         playerSummaryTextView.setText(message);
     }
     //This method calculates the score
-    private int calculateScore(boolean checkedSense, boolean rbPressedJenga, boolean rbMono1935, boolean checkedKnickknack, boolean checkedPizzazz, boolean rbPressedChess, boolean checkedMonopoly, boolean checkedTwister, boolean checkedCLUE) {
+    private int calculateScore(boolean checkedSense, boolean rbConnectFour, boolean rbPressedJenga, boolean rbMono1935, boolean checkedKnickknack, boolean checkedPizzazz, boolean rbPressedChess, boolean checkedMonopoly, boolean checkedTwister, boolean checkedCLUE) {
         int score = 0;
         if (rbPressedChess) {
             score += 1;
@@ -157,6 +169,9 @@ public class MainActivity extends AppCompatActivity {
         if (checkedSense) {
             score += 1;
         }
+        if (rbConnectFour) {
+            score += 1;
+        }
         if (rbPressedJenga) {
             score += 1;
 
@@ -173,7 +188,8 @@ public class MainActivity extends AppCompatActivity {
         endOFgame += "\n \nHASBRO publishes: Monopoly, Twister and CLUE.";
         endOFgame += "\n \nMonopoly came out in 1935.";
         endOFgame += "\n \nAccording to the Original Scrabble Dictionary, these 3 (out of 13) words are impossible to play: \nPizzazz, \nKnickknack, \nand Senselessnesses.";
-        endOFgame += "\n \nThere are 54 wooden pieces in a Jenga set. \n \n";
+        endOFgame += "\n \nThere are 54 wooden pieces in a Jenga set.";
+        endOFgame += "\n \nConnectFour uses either black and red, or yellow and red pieces. \n \n";
         Toast.makeText(this, getString(R.string.merci) + score + " out of 9!", Toast.LENGTH_LONG).show();
         return endOFgame;
 
